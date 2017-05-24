@@ -2,14 +2,30 @@
 import tushare as ts
 import  csv
 import pandas as pd
-import numy as np
+import numpy as np
 import matplotlib.pyplot as plt
+
+
+#  http://blog.csdn.net/fennvde007/article/details/37693523
+# import pandas as pd
+# import  csv
+# import pandas as pd
+# import numpy as np
+# import matplotlib.pyplot as plt
+
+# url = 'http://s3.amazonaws.com/assets.datacamp.com/course/dasi/present.txt'
+# present = pd.read_table(url, sep=' ')
+# present_year = present.set_index('year')
+# present_year['boys'].plot()
+# t=plt.legend(loc='best')
+# present_year.plot()
+# plt.show()
 
 class stock(object):
 # print tushare.__version__
 # df=ts.get_hist_data()
     def __int__(self):
-        
+        self.check=True
     def basicinfo(self):
         """
         code,代码
