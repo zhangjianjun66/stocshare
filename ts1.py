@@ -62,7 +62,9 @@ class stock(object):
             for q in quater:
                 rs=ts.get_report_data(y,q)
                 rs.to_csv(str(y)+'_'+str(q)+'.csv',encoding='utf_8_sig')
-                
+    def pic(self):
+        plt.show()
+        
 if __name__ ==  "__main__":
     t=stock()
     t.financeReport()
